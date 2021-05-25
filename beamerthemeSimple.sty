@@ -1,0 +1,50 @@
+\ProvidesPackage{beamerthemeSimple}[2021/05/24 Simple Beamer Template]
+
+
+\RequirePackage{fontawesome}
+\RequirePackage{graphbox}
+\RequirePackage{hyperref}
+
+
+% hyperlinks
+\let\orighref\href
+\renewcommand{\url}[1]{\orighref{#1}{\texttt{#1}\,\faExternalLink}}
+\renewcommand{\href}[2]{\orighref{#1}{#2\,\faExternalLink}}
+\newcommand{\mail}[1]{\orighref{mailto:#1}{\texttt{#1}\,\faEnvelope}}
+
+
+% footline
+\setbeamertemplate{footlinelogo}{%
+  \includegraphics[draft, align=c, width=0.3\paperwidth, height=0.15\paperheight]{example-image}
+}
+\defbeamertemplate{footlinelogo}{empty}{%
+  \parbox{0pt}{\vspace{0.15\paperheight}}
+}
+\defbeamertemplate{footlinelogo}{includegraphics}[1]{%
+  \includegraphics[align=c, height=0.15\paperheight]{#1}
+}
+
+\setbeamertemplate{footline}{
+  \makebox[0pt][l]{%
+    \usebeamertemplate{footlinelogo}
+  }%
+  \makebox[\textwidth][c]{%
+    \insertshortauthor
+  }%
+  \makebox[0pt][r]{%
+    Slide \insertframenumber\,\textbar\,\inserttotalframenumber%
+    \hspace{1em}
+  }
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+
+% colortheme
+\setbeamercolor{block body}{bg=structure.fg!10}
+\setbeamercolor{block title}{bg=structure.fg!20}
+\setbeamercolor{block body alerted}{bg=alerted text.fg!10}
+\setbeamercolor{block title alerted}{bg=alerted text.fg!20}
+\setbeamercolor{block body example}{bg=example text.fg!10}
+\setbeamercolor{block title example}{bg=example text.fg!20}
+\setbeamertemplate{blocks}[rounded][shadow=false]

@@ -1,0 +1,72 @@
+\documentclass[11pt, compress, aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+
+
+\usetheme{Simple}
+%\setbeamertemplate{footlinelogo}[includegraphics]{example-image}
+
+
+
+\title{My Title}
+\subtitle{My Subtitle}
+\author[Short Author]{%
+  Author\\[2pt]
+  \usebeamerfont{institute} \mail{e-mail@domain.edu}
+}
+\institute{Institute}
+\date{\today}
+
+
+
+\begin{document}
+  \begin{frame}[plain]
+    \titlepage
+  \end{frame}
+
+  \begin{frame}{Table of Contents}
+    \tableofcontents
+  \end{frame}
+
+  \section{Environments}
+  \subsection{Itemize}
+  \begin{frame}{Itemize}
+    \begin{itemize}
+      \item Item 1.
+      \item Item 2.
+        \begin{itemize}
+          \item Subitem 1.
+        \end{itemize}
+    \end{itemize}
+    \vfill
+    \begin{enumerate}
+      \item Enumerated item 1.
+      \item Enumerated item 2.
+        \begin{enumerate}
+          \item Subitem 1.
+        \end{enumerate}
+    \end{enumerate}
+  \end{frame}
+
+  \subsection{Blocks}
+  \begin{frame}{Blocks}
+    \begin{block}{Block title}
+      Block content.
+    \end{block}
+    \begin{alertblock}{Alert block title}
+      Alert block content.
+    \end{alertblock}
+    \begin{exampleblock}{Example block title}
+      Example block content.
+    \end{exampleblock}
+  \end{frame}
+
+  \section{Commands}
+  \subsection{Highlight}
+  \begin{frame}{Highlight}
+    \begin{itemize}
+      \item \emph{Emphasize}
+      \item \alert{Alert}
+      \item Footnote\footnote{\url{www.wikipedia.org}}
+    \end{itemize}
+  \end{frame}
+\end{document}
