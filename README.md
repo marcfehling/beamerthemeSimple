@@ -1,6 +1,7 @@
-# beamerthemeSimple
+# beamerthemeSimpleMFF
 
 A simple beamer theme without unnecassary distractions.
 
-It just provides a footline and modifies the color of blocks.
-It can be easily adjusted to any kind of Corporate Design.
+Configured to match the [Visual Identity](https://www.mff.cuni.cz/en/faculty/visual-identity)
+of the Faculty of Mathematics and Physics at Charles University.
+This is *not* an official design of the university.
