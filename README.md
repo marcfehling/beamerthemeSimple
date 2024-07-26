@@ -1,6 +1,7 @@
-# beamerthemeSimple
+# beamerthemeSimpleCSU
 
 A simple beamer theme without unnecassary distractions.
 
-It just provides a footline and modifies the color of blocks.
-It can be easily adjusted to any kind of Corporate Design.
+Configured to match the [Corporate Design](https://brand.colostate.edu/)
+of Colorado State University. This is *not* an official design of the
+university.
